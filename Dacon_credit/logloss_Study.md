@@ -1,3 +1,4 @@
+
 # '클래스 불균형' 
 머신러닝 모델을 평가하는 하나의 지표로서 F1 score이란 것을 고려한다. F1 score은 Precision과 Recall의 조화평균으로부터 나오는 지표이다. F1 score은 그럼 언제 사용할까? 주로 데이터 Class(Lable)이 불균형 구조일 때 모델 성능을 정확히 평가한다고 한다. 
 
@@ -105,10 +106,7 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
-
-    
-![png](output_12_1.png)
-    
+![output_12_1](https://user-images.githubusercontent.com/71176000/117084785-1a63c800-ad83-11eb-9e6e-8ac0e1f38154.png)
 
 
 무작위 랜덤 샘플링 과정을 거치면 위와 같은 그림이 나오게 됩니다. 분포가 높은 클래스의 값을 어떠한 조건 없이 무작위로 삭제하는 과정이며 이와 같은 과정을 통해서 분포가 낮은 클래스의 데이터 크기와 맞출 수 있게 됩니다.
@@ -140,11 +138,9 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
+![output_16_1](https://user-images.githubusercontent.com/71176000/117084818-2780b700-ad83-11eb-8586-27a32659b381.png)
 
-    
-![png](output_16_1.png)
-    
-
+   
 
 Tomek link는 분포가 높은 클래스의 중심분포는 어느정도 유지하면서 경계선을 조정하기 때문에 무작위로 삭제하는 샘플링보다 정보의 유실을 크게 방지할 수 있지만 **토멕링크로 묶이는 값이 한정적이기 때문에 큰 언더 샘플링의 효과를 얻을 수 없다는 단점이 있습니다.**
 
@@ -244,10 +240,7 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
-
-    
-![png](output_20_1.png)
-    
+![output_20_1](https://user-images.githubusercontent.com/71176000/117084832-2e0f2e80-ad83-11eb-8a81-a072113eda01.png)
 
 
 이 과정을 거치면 분포가 큰 클래스 값을 효율적으로 제거할 수 있게 됩니다.
@@ -279,10 +272,7 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
-
-    
-![png](output_24_1.png)
-    
+![output_24_1](https://user-images.githubusercontent.com/71176000/117084843-31a2b580-ad83-11eb-8c0a-acd2c72c0527.png)
 
 
 ## ENN (Edited Nearest Neighbours)
@@ -310,9 +300,8 @@ model_samp = classification_result2(X_samp, y_samp)
     
 
 
-    
-![png](output_27_1.png)
-    
+![output_27_1](https://user-images.githubusercontent.com/71176000/117084848-35363c80-ad83-11eb-95c7-cd1e553564de.png)
+  
 
 
 ## Neighbourhood Cleansing Rule 
@@ -343,10 +332,7 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
-
-    
-![png](output_30_1.png)
-    
+![output_30_1](https://user-images.githubusercontent.com/71176000/117084853-38c9c380-ad83-11eb-8ced-5e27e40bfddc.png)
 
 
 # OVER Sampling (Up Sampling)
@@ -377,9 +363,7 @@ model_samp = classification_result2(X_samp, y_samp)
     
 
 
-    
-![png](output_33_1.png)
-    
+![output_33_1](https://user-images.githubusercontent.com/71176000/117084864-3c5d4a80-ad83-11eb-995a-0f38b152e82e.png)
 
 
 ## ADASYN(Adaptive Synthetic Sampling) 
@@ -408,9 +392,7 @@ model_samp = classification_result2(X_samp, y_samp)
     
 
 
-    
-![png](output_36_1.png)
-    
+![output_36_1](https://user-images.githubusercontent.com/71176000/117084874-441cef00-ad83-11eb-94bd-1afe7a6334b3.png)
 
 
 ## SMOTE
@@ -435,10 +417,8 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
-
-    
-![png](output_39_1.png)
-    
+![output_39_1](https://user-images.githubusercontent.com/71176000/117084880-4a12d000-ad83-11eb-9ffa-a156a9a02683.png)
+  
 
 
 # Combine Sampling
@@ -472,10 +452,8 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
+![output_42_1](https://user-images.githubusercontent.com/71176000/117084890-4f701a80-ad83-11eb-9f3e-2ffb8d87bfe2.png)
 
-    
-![png](output_42_1.png)
-    
 
 
 ## SMOTE + TOMEK(가까운 클래스 분포 삭제)
@@ -501,8 +479,6 @@ model_samp = classification_result2(X_samp, y_samp)
       warnings.warn(msg, category=FutureWarning)
     
 
+![output_45_1](https://user-images.githubusercontent.com/71176000/117084899-572fbf00-ad83-11eb-8b25-6ce0a4c22ac5.png)
 
-    
-![png](output_45_1.png)
-    
 
