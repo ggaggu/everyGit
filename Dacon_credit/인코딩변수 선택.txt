@@ -1,0 +1,33 @@
+-명목형
+onehot(낮은 카디널리티) : (car), (gender),(child_num), (email),(work_phone)(phone)
+hasing(높은 카디널리티) : (family_type), (house_type), ((edu_type)), occup_type,((income_type))
+
+-서수형
+label, Ordinal-encoding(낮은 카디널리티) : (reality),income_total, ((family_size)),
+바이너리 :  Days_employ, begin_month,days_birth
+
+
+income_total : 적중많 (log기준) ~11.5/11.5~12.5/12.5~
+begin_month -> begin_year
+family_size : 1/1~4/5~
+day_birth -> 5로 나누기
+
+gender : 2
+car : 2
+reality : 2
+child_num : 2
+income_total : 265
+income_type : 5
+edu_type : 5
+family_type : 5
+house_type : 6
+DAYS_BIRTH : 49
+DAYS_EMPLOYED : 45
+FLAG_MOBIL : 1
+work_phone : 2
+phone : 2
+email : 2
+occyp_type : 19
+family_size : 10
+begin_month : 61
+credit : 4
