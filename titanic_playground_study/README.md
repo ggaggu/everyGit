@@ -16,5 +16,7 @@ titanic 승선자들의 데이터를 기반으로 승선자들의 생존 유무�
 
 ## :fire: 프로젝트 방향
 머신러닝이 무엇인지, 어떻게 하는 것인지 이해하고 정확도를 높이기위해서 여러방법을 공부해본다.
+ ```Pycaret```을 이해하고 사용하여 xgboost,lightGBM등의 여러 모델들을 사용한 ```sklearn```과 비교한다. 
 
-
+## Repository 구성
+simple model 소스코드 , [pycaret 소스코드](https://github.com/ggaggu/hj_Project/blob/b874cd8d845bdd049879ceb0fdb1b0ad948608d2/titanic_playground_study/pycaret-study.ipynb) , [최종 분석  보고서](https://github.com/ggaggu/hj_Project/blob/b874cd8d845bdd049879ceb0fdb1b0ad948608d2/titanic_playground_study/titanic_TeamProj_final.pdf)
